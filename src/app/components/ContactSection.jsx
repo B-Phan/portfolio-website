@@ -1,6 +1,5 @@
-"use client"
-import { useState } from "react";
-import Image from "next/image";
+"use client";
+import React, { useState } from "react";
 
 const ContactSection = () => {
   const initialState = {
@@ -101,7 +100,7 @@ const ContactSection = () => {
             </button>
           </form>
           {showPopup && (
-            <div className="fixed inset-0 flex items-center justify-center z-50 bg-gray-900 bg-opacity-50">
+            <div className="fixed inset-0 flex items-center justify-center z-50">
               <div className="bg-white p-6 rounded-lg shadow-lg">
                 <p className="text-xl text-green-500">Your message has been sent!</p>
                 <button
@@ -121,25 +120,15 @@ const ContactSection = () => {
           <div className="z-10">
             <h5 className="text-xl font-bold text-white my-2">Let's Connect</h5>
             <p className="text-[#ADB7BE] mb-4 max-w-md">
-              I&apos;m currently seeking new job opportunities, my inbox is always open.
-              I&apos;ll try my best to get back to you immediately!
+              I'm currently seeking new job opportunities, my inbox is always open.
+              I'll try my best to get back to you immediately!
             </p>
             <div className="socials flex flex-row gap-2">
               <a href="https://github.com/B-Phan/" target="_blank" className="hover:text-white">
-                <Image
-                  src="/github-mark.svg"
-                  alt="Github Mark"
-                  width={48}
-                  height={48}
-                />
+                <img src="/github-mark.svg" alt="Github Mark" className="h-12 w-12" />
               </a>
               <a href="https://www.linkedin.com/in/br-phan/" target="_blank" className="hover:text-white">
-                <Image
-                  src="/linkedin-mark.svg"
-                  alt="LinkedIn Icon"
-                  width={48}
-                  height={48}
-                />
+                <img src="/linkedin-mark.svg" alt="LinkedIn Icon" className="h-12 w-12" />
               </a>
             </div>
           </div>
