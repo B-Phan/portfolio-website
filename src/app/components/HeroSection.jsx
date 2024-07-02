@@ -30,9 +30,9 @@ const HeroSection = () => {
       <div className="col-span-7 place-self-center place-items-center grid lg:place-items-start">
         <h1 className="text-white max-w-2xl mb-4 lg:text-6xl text-4xl font-extrabold">
           <span className="text-transparent text-6xl bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
-            Hello, I'm{" "}
+            Hello, I&apos;m{" "}
           </span>
-          <br></br>
+          <br />
           <TypeAnimation
             sequence={[
               "Brandon",
@@ -47,7 +47,7 @@ const HeroSection = () => {
             repeat={Infinity}
           />
         </h1>
-        <p className="text-[#ADB7BE] mb-6 textl-lg lg:text-xl">
+        <p className="text-[#ADB7BE] mb-6 text-lg lg:text-xl">
           Software Engineering, Master of Engineering, University of Calgary
         </p>
         <div>
@@ -71,6 +71,7 @@ const HeroSection = () => {
         <div className="bg-[#181818] lg:w-[400px] lg:h-[300px] w-[200px] h-[200px] relative">
           <Image
             src="/images/headshot.jpg"
+            alt="Brandon Phan"
             className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
             width={300}
             height={300}
@@ -82,3 +83,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
