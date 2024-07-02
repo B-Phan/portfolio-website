@@ -4,7 +4,7 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 
 const downloadPdf = () => {
-  const pdfUrl = '/Brandon_Phan_Resume_2024.pdf';
+  const pdfUrl = '/Brandon_Phan_Resume.pdf';
 
   // Create an anchor element
   const link = document.createElement('a');
