@@ -32,6 +32,15 @@ const projectsData = [
       gitUrl: "https://github.com/B-Phan/e-commerce-webapp",
       previewUrl: "/"
     },
+    {
+      id: 4,
+      title: "Alberta Specialty Care Wait-Times Mobile Application",
+      description: "React Native", 
+      image: "/images/projects/4.png",
+      tag: ["All", "Mobile"],
+      gitUrl: "https://github.com/Brandonlac/alberta-specialty-care-wait-times/tree/main",
+      previewUrl: "https://www.youtube.com/watch?v=Nu_xVqOGK54"
+    },
 ];
 
 const ProjectsSection = () => {
@@ -61,6 +70,11 @@ const ProjectsSection = () => {
             onClick={handleTagChange} 
             name="Web" 
             isSelected={tag === "Web"} 
+          />
+          <ProjectTag 
+            onClick={handleTagChange} 
+            name="Mobile" 
+            isSelected={tag === "Mobile"} 
           />
         </div>
         <div className="grid md:grid-cols-3 gap-8 md:gap-12">
